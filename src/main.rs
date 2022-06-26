@@ -7,6 +7,7 @@ fn main() {
         .nth(1)
         .and_then(|s| s.parse().ok())
         .unwrap_or(DEFAULT_SIZE);
+
     let mut results: Vec<u16> = vec![0; size];
     let mut last_number = 0;
     let mut max_steps = 0;
